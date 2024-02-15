@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Botones y campos de texto para la calculadora -->
+    <!-- Puedes personalizar este diseño según tus necesidades -->
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
+
+    <!-- Agrega los botones para 1-9, operadores y el botón "=" -->
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=" />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEqual"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Resultado"
+        android:inputType="none"
+        android:enabled="false"/>
+</RelativeLayout>
